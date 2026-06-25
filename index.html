@@ -559,8 +559,8 @@
       }
 
     } catch (e) {
-      // Masterclass not configured yet — section stays hidden
-    }
+  console.error('Masterclass load error:', e);
+}
   }
 
   function startCountdown(target) {
