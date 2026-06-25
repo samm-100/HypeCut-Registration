@@ -403,7 +403,7 @@
        Hidden by default — shown when
        enabled = TRUE in the sheet.
   ══════════════════════════════════════ -->
-  <div class="mc-section" id="masterclassSection">
+  <div class="mc-section" id="masterclassSection" style="display:none;">
     <div class="mc-card">
       <div class="card-bar"></div>
       <!-- Image: paste URL in Google Sheets → image_url -->
@@ -442,7 +442,7 @@
 
         <!-- CTA Button: controlled by Google Sheets → cta_text + cta_link -->
         <div class="mc-btn-wrap" id="mcCtaWrap">
-          <a href="https://your-link-here.com" id="mcCtaBtn" class="mc-btn">Claim Your Free Spot</a>
+          <a href="https://youtube.com/@hypecutstudios?si=9S2M24S_S0qePqeM" id="mcCtaBtn" class="mc-btn">Claim Your Free Spot</a>
         </div>
       </div>
     </div>
@@ -522,7 +522,7 @@
 
   async function loadMasterclass() {
     try {
-      const res = await fetch(CSV_URL + Date.now());
+      const res = await fetch(CSV_URL + Date.now(2026-06-30T18:00:00+05:30));
       const text = await res.text();
       const cfg = {};
       text.trim().split('
